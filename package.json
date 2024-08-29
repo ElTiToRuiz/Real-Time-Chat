@@ -1,0 +1,22 @@
+{
+  "name": "real-time-chat",
+  "version": "1.0.0",
+  "description": "This is a real time chat simple app made with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ElTiToRuiz/Real-Time-Chat.git"
+  },
+  "author": "Igor Ruiz Igartua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElTiToRuiz/Real-Time-Chat/issues"
+  },
+  "homepage": "https://github.com/ElTiToRuiz/Real-Time-Chat#readme",
+  "dependencies": {
+    "socket.io": "4.7.5"
+  }
+}

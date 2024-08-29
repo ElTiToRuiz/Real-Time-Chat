@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple chat interface">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Chat Interface">
+    <meta property="og:description" content="A simple and responsive chat interface.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="path/to/image.jpg">
+    <title>Chat Interface</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 36px;
+            background-color: #f9f9f9;
+        }
+
+        main {
+            background-color: #d3d0d0;
+            width: 100%;
+            max-width: 500px;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border: 1px solid #111;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #form {
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        #form input {
+            width: calc(100% - 60px);
+            height: 50px;
+            border: 1px solid #000;
+            padding: 0 20px;
+            font-size: 16px;
+            border-radius: 9999px;
+            outline: none;
+        }
+
+        #form button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        #form button:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        #form button img {
+            width: 20px;
+            height: auto;
+        }
+
+        #form button span {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="" id="form" aria-label="Chat form">
+            <input type="text" id="input" autocomplete="off" placeholder="Type a message..." aria-label="Message input">
+            <button type="submit" aria-label="Send message">
+                <img src="img/send_black.svg" alt="Send">
+                <span>Send</span>
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>
