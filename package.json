@@ -2,8 +2,10 @@
   "name": "real-time-chat",
   "version": "1.0.0",
   "description": "This is a real time chat simple app made with node",
-  "main": "index.js",
+  "main": "chat.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon -L chat.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,12 @@
   },
   "homepage": "https://github.com/ElTiToRuiz/Real-Time-Chat#readme",
   "dependencies": {
+    "@libsql/client": "0.10.0",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
     "socket.io": "4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
