@@ -72,7 +72,6 @@ The project structure is as follows:
 │   ├── css
 │   │   └── style.css
 │   ├── img
-│   │   └── logo.png
 │   └── script
 │       └── script.js
 ├── chat.js
