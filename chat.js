@@ -13,7 +13,7 @@ const io = new Server(server, {
 })
 
 const db = createClient({
-    url: "libsql://good-clover-eltitoruiz.turso.io",
+    url: process.env.DB_URL,
     authToken: process.env.DB_TOKEN
 });
 

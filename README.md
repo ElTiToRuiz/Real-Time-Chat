@@ -38,6 +38,7 @@ This is a real-time chat application built with Node.js, Express, Socket.io, and
 4. Create a `.env` file in the root of the project and add your database token DB_TOKEN:
 
     ```env
+    DB_URL=your_database_link/url
     DB_TOKEN=your_database_token
     ```
 
